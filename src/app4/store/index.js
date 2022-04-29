@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import calcReducer from './calcSlice'
+import calculatorReducer from './calculatorSlice'
+import operationReducer from './operationSlice'
 
 export const store = configureStore({
     reducer: {
-        calc: calcReducer,
+        calculator: calculatorReducer,
+        operation: operationReducer,
     },
 })
