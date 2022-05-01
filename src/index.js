@@ -14,8 +14,8 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store4}>
-      <App4 />
+    <Provider store={store3}>
+      <App3 />
     </Provider>
 );
 

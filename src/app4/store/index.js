@@ -5,6 +5,6 @@ import operationReducer from './operationSlice'
 export const store = configureStore({
     reducer: {
         calculator: calculatorReducer,
-        operation: operationReducer,
+        
     },
 })
