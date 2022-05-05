@@ -10,12 +10,16 @@ import {store as store1} from "./app1/store";
 import {store as store3} from "./app3/store/appStore";
 import {store as store4} from './app4/store/index'
 
+import {store} from './shop/store/index'
+import {App as ShopApp} from './shop/App'
 import reportWebVitals from './reportWebVitals';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store3}>
-      <App3 />
+    <Provider store={store}>
+      <ShopApp />
     </Provider>
 );
 

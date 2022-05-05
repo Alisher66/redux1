@@ -1,0 +1,18 @@
+
+.header_menu li{
+    margin-right: 20px;
+}
+.header_menu a{
+    color: azure;
+    text-decoration: none;
+    transition:all .5ms;
+}
+.header_menu a.active{
+    text-decoration:underline;
+}
+.product_card{
+    margin-bottom: 35px;
+}
+.product_card img{
+    min-width: 350px !important;
+}
