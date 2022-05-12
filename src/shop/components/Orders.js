@@ -25,7 +25,7 @@ function Orders() {
             const changedOrder = {
                 product_id: order.product_id,
                 count,
-                price: price * count
+                total_price: price * count
             }
             dispath(changeOrder(changedOrder))
         }

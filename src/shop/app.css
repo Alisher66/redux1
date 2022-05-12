@@ -1,13 +1,13 @@
 
-.header_menu li{
+.header_menu li, .header_menu-right li{
     margin-right: 20px;
 }
-.header_menu a{
+.header_menu a, .header_menu-right a{
     color: azure;
     text-decoration: none;
     transition:all .5ms;
 }
-.header_menu a.active{
+.header_menu a.active, .header_menu-right a.active{
     text-decoration:underline;
 }
 .product_card{

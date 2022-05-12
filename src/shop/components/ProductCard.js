@@ -47,7 +47,6 @@ function ProductCard(props) {
             newOrder.count = +findOrder.count + 1
             newOrder.total_price = newOrder.count * product.price;
             dispatch(changeOrder(newOrder))
-
         } else {
             dispatch(addOrder(newOrder))
         }

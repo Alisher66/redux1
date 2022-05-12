@@ -41,7 +41,8 @@ export const deleteProductById = createAsyncThunk(
 const initialState = {
     products: [],
     status: null,
-    error: null
+    error: null,
+    firstInit:null
   }
 const productSlice = createSlice({
     name:'product',
@@ -60,7 +61,10 @@ const productSlice = createSlice({
         },
         [getProducts.fulfilled]: (state, action) => {
             state.status = "resolved";
-            state.products = action.payload;
+            if(!state.firstInit){
+                state.firstInit = true;
+                state.products = action.payload;
+            }
         },
         [getProducts.rejected]: (state, action) => {
             state.status = "rejected";

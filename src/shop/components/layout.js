@@ -14,21 +14,28 @@ function Layout() {
         <>
             <Box sx={{flexGrow: 1}}>
                 <AppBar position="static">
-                    <Toolbar>
+                    <Toolbar sx={{display: "flex", justifyContent:"space-between"}}>
                         <ul className="header_menu" style={{display: "flex", listStyle:'none'}}>
                             <li>
                                 <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                                    <NavLink to="/" >Home</NavLink>
-                                </Typography>
-                            </li>
-                            <li>
-                                <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                                    <NavLink to="/products" >Products</NavLink>
+                                    <NavLink to="/" >Products</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                                     <NavLink to="/orders" >Orders</NavLink>
+                                </Typography>
+                            </li>
+                        </ul>
+                        <ul className="header_menu-right" style={{display: "flex", listStyle:'none'}}>
+                            <li>
+                                <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
+                                    <NavLink to="/register" >Register</NavLink>
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
+                                    <NavLink to="/login" >Login</NavLink>
                                 </Typography>
                             </li>
                         </ul>

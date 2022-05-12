@@ -6,6 +6,8 @@ import Orders from "./components/Orders";
 import { useEffect } from "react";
 import { useDispatch} from 'react-redux'
 import { getProducts } from './store/productSlice';
+import Register from "./components/Register";
+import Login from "./components/Login";
 
 export function App() {
     // const dispatch = useDispatch();
@@ -18,8 +20,10 @@ export function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route path="products" element={<Products />} />
+                    <Route index element={<Products />} />
                     <Route path="orders" element={<Orders />} />
+                    <Route path="register" element={<Register />} />
+                    <Route path="login" element={<Login />} />
                 </Route>
             </Routes>
         </BrowserRouter>

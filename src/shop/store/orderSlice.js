@@ -14,7 +14,7 @@ const orderSlise = createSlice({
             state.orders.forEach(order => {
                 if(order.product_id === action.payload.product_id) {
                     order.count = action.payload.count
-                    order.total_price = action.payload.price
+                    order.total_price = action.payload.total_price
                 }
             })
         },
